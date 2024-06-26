@@ -1,0 +1,142 @@
+body{
+	background-color:#282c34;
+}
+#fringe {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	left: 0%;
+	top: 0%;	
+	
+	background-color: #dddddd;
+}
+	#logo {
+		height: 60px;
+		width: 120px;
+		position: absolute;
+		left: 30px;
+		top: 52%;
+		transform: translate(0, -50%);
+	}
+	.bt_fringe {
+		height: 100%;
+		width: 160px;
+		float: right;
+		margin-right: 10px;
+		
+		/* border-radius:3px; */
+		border: none;
+		
+		font-size: 20px;
+		color: #000000;
+		background-color: #dddddd00;
+	}
+	#homepage_bt {
+		background-color: #bbbbbb60;
+	}
+	#center_bt:hover, #homepage_bt:hover, #exit_bt:hover {
+		background-color: #bbbbbbd0;
+	}
+	#exit_bt {
+		width: 80px;
+		margin-right: 50px;
+	}
+::-webkit-scrollbar {
+	display: none;
+}
+
+#table {
+	min-width: 1200px;
+	min-height: 600px;
+	position: absolute;
+	left: 60px;
+	right: 60px;
+	top: 230px;
+	bottom: 20px;
+	
+	border-radius: 8px;
+	background-color: #adadad;
+}
+/********** 大盘 **********/
+#MarketTitle {
+	height: 50px;
+	width: 81%;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+.title {
+	width: 33%;
+	float: left;
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+	/* line-height: 30px; */
+	color: #000000;
+}
+#Market {
+	position: absolute;
+	width: 90%;
+	left: 50%;
+	top: 70px;
+	bottom: 10px;
+	transform: translate(-50%, 0%);
+	overflow-y: scroll;
+	border-radius: 3px;
+}
+.market_box {
+	height: 50px;
+	width: 100%;
+	background-color: #cccccc;
+}
+.market_box:hover {
+	background-color: #c0c0c0;
+}
+.market_line {
+	height: 100%;
+	width: 90%;
+	position: relative;
+	left:50%;
+	transform: translate(-50%, 0%);
+	
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: grey;
+	
+	font-size: 20px;
+}
+.data {
+	width: 33%;
+	float: left;
+	
+	text-align: center;
+	line-height: 50px;
+	color: #000000;
+}
+/********** 个股 **********/
+.bt_table {
+	height: 35px;
+	position: absolute;
+	top: 10px;
+	left:10px;
+	
+	border-radius:3px;
+	border: none;
+	color: #000000;
+	font-size: 18px;
+	background-color: #ffffff20;
+}
+.bt_table:hover {
+	background-color: #ffffff80;
+}
+#myCanvas {
+	width: 90% !important;
+	height: 90% !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	background-color: #19197000;
+}

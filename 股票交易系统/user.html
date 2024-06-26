@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票交易系统</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/user.css">
+	<script src="JS/user.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+	<div id="fringe">
+		<img src='Asset/picture/logo.png' alt='股票交易系统' id='logo'>
+		<button id="exit_bt" class="bt_fringe" onclick="Exit()">注销</button>
+	</div>
+	<div id="info" class="content">
+		<div id="balance">您的余额：1</div>
+		<div id="hello">, 您好</div>
+	</div>
+	<div id="menu" class="content">
+		<button class="bt_menu" onclick="tradeCenter()">交易中心</button>
+		<button class="bt_menu" onclick="getInventory()">我的持仓</button>
+		<button class="bt_menu" onclick="getTradeRecord()">交易记录</button>
+	</div>
+	<div id="board" class="content"></div>
+</body>
+</html>
