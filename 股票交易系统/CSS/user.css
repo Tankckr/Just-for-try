@@ -1,0 +1,342 @@
+body{
+	background-color:#282c34;
+}
+#fringe {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	left: 0%;
+	top: 0%;	
+	
+	background-color: #dddddd;
+}
+	#logo {
+		height: 60px;
+		width: 120px;
+		position: absolute;
+		left: 30px;
+		top: 52%;
+		transform: translate(0, -50%);
+	}
+	.bt_fringe {
+		height: 100%;
+		width: 160px;
+		float: right;
+		margin-right: 10px;
+		
+		/* border-radius:3px; */
+		border: none;
+		
+		font-size: 20px;
+		color: #000000;		
+		background-color: #dddddd00;
+	}
+	#exit_bt:hover {
+		background-color: #bbbbbbd0;
+	}
+	#exit_bt {
+		width: 80px;
+		margin-right: 50px;
+	}
+
+.content {
+	
+	border-radius: 3px;
+	background-color: #dddddda0;
+}
+#info {
+	width: 95%;
+	height: 100px;
+	min-width: 1200px;
+	position: absolute;
+	left: 2.5%;
+	top: 90px;
+}
+	#balance {
+		width: 600px;
+		height: 100%;
+		position: absolute;
+		left: 30px;
+		
+		line-height: 100px;
+		font-size: 25px;
+		color: #191970;
+	}
+	#hello {
+		width: 400px;
+		height: 100%;
+		position: absolute;
+		right: 30px;
+		
+		text-align: right;
+		line-height: 100px;
+		font-size: 25px;
+		color: #191970;
+	}
+
+#menu {
+	width: 180px;
+	min-height: 700px;
+	position: absolute;
+	top: 200px;
+	left: 2.5%;
+	right: 85%;
+	bottom: 20px;
+}
+	.bt_menu {
+		height: 60px;
+		width: 90%;
+		margin-top: 20px;
+		margin-left: 5%;
+		
+		border-radius:3px;
+		border: none;
+		
+		font-size: 20px;
+		color: #000000;
+		background-color: #dddddd20;
+	}
+	.bt_menu:hover {
+		background-color: #bbbbbb;
+	}
+
+#board {
+	min-height: 700px;
+	min-width: 1010px;
+	position: absolute;
+	top: 200px;
+	left: calc(190px + 2.5%);
+	right: 2.5%;
+	bottom: 20px;
+}
+	.roll {
+		overflow-y: scroll;
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
+	.board {
+		height: 120px;
+		width: 97%;
+		margin-top: 15px;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		
+		font-size: 20px;
+		color: #444444;
+		border-radius: 5px;
+		background-color: #dddddd;
+	}
+	.abs {
+		position: absolute;
+	}
+	.w1 {
+		top: 15px;
+		left: 25px;
+	}
+	.w2 {
+		top: 15px;
+		left: 350px;
+	}
+	.w3 {
+		bottom: 15px;
+		left: 25px;
+	}
+	.w4 {
+		bottom: 15px;
+		left: 350px;
+	}
+	.rec_mask {
+		height: 120px;
+		width: 120px;
+		position: absolute;
+		top: 0px;
+		left: 130px;
+	}
+	#UUID {
+		bottom: 10px;
+		left: 350px;
+	}
+	.r1{
+		top: 10px;
+	}
+	.r2{
+		bottom: 45px; 
+	}
+	.l1{
+		left: 25px;
+	}
+	.l2{
+		left: 270px;
+	}
+	.l3{
+		left: 650px;
+	}
+
+/********** 交易中心 **********/
+	#trade_table {
+		width: 90%;
+		height: 200px;
+		position: absolute;
+		left: 50%;
+		top: 15px;
+		transform: translate(-50%, 0%);
+		
+		border-radius: 8px;
+		background-color: #adadad;
+	}
+	.TradeItems {
+		width: 300px;
+		height: 80px;
+		position: relative;
+		float: left;
+	}
+	.TradeWords {
+		width: 100px;
+		position: absolute;
+		top: 49%;
+		left: 25px;
+		transform: translate(0%, -50%);
+		
+		font-size: 18px;
+	}
+	input {
+		width: 150px;
+		height: 30px;
+		position: absolute;
+		top: 50%;
+		left: 120px;
+		transform: translate(0%, -50%);
+		
+		border: none;
+		border-radius:2px;
+		background-color: #dddddd;
+	}
+	input::placeholder {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 14px;
+		color: #000000;
+	}
+	.bt_trade {
+		height: 60px;
+		width: 80px;
+		
+		border-radius:7px;
+		border: none;
+		color: #000000;
+		font-size: 20px;
+		background-color: #dcdcdc;
+	}
+	.bt_trade:hover {
+		font-size: 22px;
+		background-color: #e7e7e7;
+	}
+	#buy {
+		position: absolute;
+		top: 110px;
+		left:50px;
+	}
+	#sell {
+		position: absolute;
+		top: 110px;
+		left:150px;
+	}
+	
+	#table {
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		top: 230px;
+		bottom: 10px;
+		
+		transform: translate(-50%, 0%);
+		border-radius: 8px;
+		background-color: #adadad;
+	}
+	/********** 大盘 **********/
+	#MarketTitle {
+		height: 50px;
+		width: 81%;
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.title {
+		width: 33%;
+		float: left;
+		font-size: 28px;
+		font-weight: 600;
+		text-align: center;
+		/* line-height: 30px; */
+		color: #000000;
+	}
+	#Market {
+		position: absolute;
+		width: 90%;
+		left: 50%;
+		top: 70px;
+		bottom: 10px;
+		transform: translate(-50%, 0%);
+		overflow-y: scroll;
+		border-radius: 3px;
+	}
+	.market_box {
+		height: 50px;
+		width: 100%;
+		background-color: #cccccc;
+	}
+	.market_box:hover {
+		background-color: #c0c0c0;
+	}
+	.market_line {
+		height: 100%;
+		width: 90%;
+		position: relative;
+		left:50%;
+		transform: translate(-50%, 0%);
+		
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: grey;
+		
+		font-size: 20px;
+	}
+	.data {
+		width: 33%;
+		float: left;
+		
+		text-align: center;
+		line-height: 50px;
+		color: #000000;
+	}
+	/********** 个股 **********/
+	.bt_table {
+		height: 35px;
+		position: absolute;
+		top: 10px;
+		left:10px;
+		
+		border-radius:3px;
+		border: none;
+		color: #000000;
+		font-size: 18px;
+		background-color: #ffffff20;
+	}
+	.bt_table:hover {
+		background-color: #ffffff80;
+	}
+	#myCanvas {
+		width: 90% !important;
+		height: 90% !important;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+		background-color: #19197000;
+	}

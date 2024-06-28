@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票交易系统</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/config_login&regist.css">
+	<script src="JS/login&regist.js"></script>
+</head>
+<body>
+    <div class="login">
+        <div class="header">登录</div>
+        <div class="username">
+            <input id="un" type="text" placeholder="请输入用户名">
+            <span class="left"></span>
+            <span class="right"></span>
+            <span class="top"></span>
+            <span class="bottom"></span>
+        </div>
+        <div class="password">
+            <input id="pd" type="password" placeholder="请输入密码">
+            <span class="left"></span>
+            <span class="right"></span>
+            <span class="top"></span>
+            <span class="bottom"></span>
+        </div>
+		<button class="btn" onclick="Login(document.getElementById('un').value, document.getElementById('pd').value)">登录</button>
+		<a class="registLink" href="regist.html" style="text-decoration: none;">没有账号？点击注册</a>
+		<a class="visitor" href="main.html" style="text-decoration: none;">游客登陆</a>
+    </div>
+</body>
+</html>
